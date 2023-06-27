@@ -1,0 +1,18 @@
+<h1>
+  <button class="btn"
+     [class.btn-primary]="!meuFavorito"
+     [class.btn-secondary]="meuFavorito"
+     (click)="onClick()"
+  >Teste 1</button>
+</h1>
+
+<h1>
+  <button class="btn"
+     [ngClass]="{
+      'btn-primary': !meuFavorito,
+      'btn-secondary': meuFavorito
+     }"
+     (click)="onClick()"
+  >Teste</button>
+</h1>
+
