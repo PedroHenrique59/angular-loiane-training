@@ -1,0 +1,11 @@
+<h5>Styles com diretiva ngStyle</h5>
+
+<input type="text" [(ngModel)]="tamanhoFonte">
+
+<button [ngStyle]="{
+'backgroundColor': (ativo ? 'blue' : 'gray'),
+'color': (ativo ? 'white' : 'yellow'),
+'fontSize': tamanhoFonte + 'px'
+}"
+        (click)="mudarAtivo()">Teste
+</button>
