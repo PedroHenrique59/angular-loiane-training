@@ -1,0 +1,13 @@
+<p>Titulo: {{livro.titulo | camelCase}}</p>
+
+<p>Rating: {{livro.rating | number: '1.1-1' }}</p>
+
+<p>Número Páginas: {{livro.numeroPaginas}}</p>
+
+<p>Preço: {{livro.preco | currency: 'BRL'}}</p>
+
+<p>Data Lançamento: {{livro.dataLancamento | date: 'dd/MM/yyyy'}}</p>
+
+<p>Url: {{livro.url}}</p>
+
+<p>Livro: {{livro | json}}</p>

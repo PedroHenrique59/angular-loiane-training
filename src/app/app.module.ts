@@ -13,6 +13,8 @@ import {FormsModule} from '@angular/forms';
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
+import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
+import { CamelCasePipe } from './camel-case.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
     DiretivaNgstyleComponent,
     FundoAmareloDirective,
     DiretivasCustomizadasComponent,
-    HighlightMouseDirective
+    HighlightMouseDirective,
+    ExemplosPipesComponent,
+    CamelCasePipe
   ],
   imports: [
     BrowserModule,
