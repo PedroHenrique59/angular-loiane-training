@@ -18,6 +18,7 @@ import { CamelCasePipe } from './pipes/camel-case.pipe';
 import {registerLocaleData} from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { FiltroArrayPipe } from './pipes/filtro-array.pipe';
+import { FiltroArrayImpuroPipe } from './pipes/filtro-array-impuro.pipe';
 
 registerLocaleData(localePt, 'pt');
 
@@ -35,7 +36,8 @@ registerLocaleData(localePt, 'pt');
     HighlightMouseDirective,
     ExemplosPipesComponent,
     CamelCasePipe,
-    FiltroArrayPipe
+    FiltroArrayPipe,
+    FiltroArrayImpuroPipe
   ],
   imports: [
     BrowserModule,

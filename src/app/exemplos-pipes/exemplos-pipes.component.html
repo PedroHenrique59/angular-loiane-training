@@ -22,8 +22,18 @@
 
 <button type="button" (click)="addCurso(inputCurso.value)">Adicionar</button>
 
+<h5>Pipe Puro</h5>
+
 <ul>
   <li *ngFor="let liv of livros | filtroArray: filtro ">
+    {{liv}}
+  </li>
+</ul>
+
+<h5>Pipe Impuro</h5>
+
+<ul>
+  <li *ngFor="let liv of livros | filtroArrayImpuro: filtro ">
     {{liv}}
   </li>
 </ul>
