@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-exemplos-pipes',
@@ -16,9 +16,19 @@ export class ExemplosPipesComponent implements OnInit {
     url: 'http://a.co/glgjpRP'
   };
 
-  constructor() { }
+  livros: string[] = ['Java', 'Angular 2'];
+
+  filtro: string;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
+  addCurso(curso) {
+    this.livros.push(curso);
+  }
+
 }
+

@@ -14,9 +14,10 @@ import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
-import { CamelCasePipe } from './camel-case.pipe';
+import { CamelCasePipe } from './pipes/camel-case.pipe';
 import {registerLocaleData} from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { FiltroArrayPipe } from './pipes/filtro-array.pipe';
 
 registerLocaleData(localePt, 'pt');
 
@@ -33,7 +34,8 @@ registerLocaleData(localePt, 'pt');
     DiretivasCustomizadasComponent,
     HighlightMouseDirective,
     ExemplosPipesComponent,
-    CamelCasePipe
+    CamelCasePipe,
+    FiltroArrayPipe
   ],
   imports: [
     BrowserModule,
