@@ -23,6 +23,8 @@ import { CursosComponent } from './componentes-rotas/cursos/cursos.component';
 import { HomeComponent } from './componentes-rotas/home/home.component';
 import { LoginComponent } from './componentes-rotas/login/login.component';
 import { CursoDetalheComponent } from './componentes-rotas/curso-detalhe/curso-detalhe.component';
+import {CursosService} from './services/cursos.service';
+import { CursoNaoEncontradoComponent } from './componentes-rotas/curso-nao-encontrado/curso-nao-encontrado.component';
 
 registerLocaleData(localePt, 'pt');
 
@@ -45,7 +47,8 @@ registerLocaleData(localePt, 'pt');
     CursosComponent,
     HomeComponent,
     LoginComponent,
-    CursoDetalheComponent
+    CursoDetalheComponent,
+    CursoNaoEncontradoComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,8 @@ registerLocaleData(localePt, 'pt');
     {
       provide: LOCALE_ID,
       useValue: 'pt'
-    }
+    },
+    CursosService
   ],
   bootstrap: [AppComponent]
 })
