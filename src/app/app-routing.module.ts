@@ -3,10 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './componentes-rotas/home/home.component';
 import {LoginComponent} from './componentes-rotas/login/login.component';
 import {CursosComponent} from './componentes-rotas/cursos/cursos.component';
+import {CursoDetalheComponent} from './componentes-rotas/curso-detalhe/curso-detalhe.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'curso/:id', component: CursoDetalheComponent},
   {path: 'cursos', component: CursosComponent}
 ];
 
@@ -14,4 +16,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

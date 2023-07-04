@@ -22,6 +22,7 @@ import { FiltroArrayImpuroPipe } from './componentes-gerais/pipes/filtro-array-i
 import { CursosComponent } from './componentes-rotas/cursos/cursos.component';
 import { HomeComponent } from './componentes-rotas/home/home.component';
 import { LoginComponent } from './componentes-rotas/login/login.component';
+import { CursoDetalheComponent } from './componentes-rotas/curso-detalhe/curso-detalhe.component';
 
 registerLocaleData(localePt, 'pt');
 
@@ -43,7 +44,8 @@ registerLocaleData(localePt, 'pt');
     FiltroArrayImpuroPipe,
     CursosComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    CursoDetalheComponent
   ],
   imports: [
     BrowserModule,
