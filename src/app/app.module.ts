@@ -25,6 +25,7 @@ import { LoginComponent } from './componentes-rotas/login/login.component';
 import { CursoDetalheComponent } from './componentes-rotas/curso-detalhe/curso-detalhe.component';
 import {CursosService} from './services/cursos.service';
 import { CursoNaoEncontradoComponent } from './componentes-rotas/curso-nao-encontrado/curso-nao-encontrado.component';
+import {AlunosModule} from './componentes-rotas/alunos/alunos.module';
 
 registerLocaleData(localePt, 'pt');
 
@@ -53,7 +54,8 @@ registerLocaleData(localePt, 'pt');
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AlunosModule
   ],
   providers: [
     {
