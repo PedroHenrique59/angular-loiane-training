@@ -1,2 +1,5 @@
-<p>alunos works!</p>
+<div class="collection">
+  <a class="collection-item" [routerLink]="[aluno.id]" *ngFor="let aluno of alunos" >{{aluno.nome}}</a>
+</div>
+
 <router-outlet></router-outlet>
