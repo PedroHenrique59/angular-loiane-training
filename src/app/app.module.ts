@@ -19,13 +19,10 @@ import {registerLocaleData} from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { FiltroArrayPipe } from './componentes-gerais/pipes/filtro-array.pipe';
 import { FiltroArrayImpuroPipe } from './componentes-gerais/pipes/filtro-array-impuro.pipe';
-import { CursosComponent } from './componentes-rotas/cursos/cursos.component';
 import { HomeComponent } from './componentes-rotas/home/home.component';
 import { LoginComponent } from './componentes-rotas/login/login.component';
-import { CursoDetalheComponent } from './componentes-rotas/curso-detalhe/curso-detalhe.component';
-import {CursosService} from './services/cursos.service';
-import { CursoNaoEncontradoComponent } from './componentes-rotas/curso-nao-encontrado/curso-nao-encontrado.component';
 import {AlunosModule} from './componentes-rotas/alunos/alunos.module';
+import {CursosModule} from './componentes-rotas/cursos/cursos.module';
 
 registerLocaleData(localePt, 'pt');
 
@@ -45,24 +42,21 @@ registerLocaleData(localePt, 'pt');
     CamelCasePipe,
     FiltroArrayPipe,
     FiltroArrayImpuroPipe,
-    CursosComponent,
     HomeComponent,
-    LoginComponent,
-    CursoDetalheComponent,
-    CursoNaoEncontradoComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    AlunosModule
+    AlunosModule,
+    CursosModule
   ],
   providers: [
     {
       provide: LOCALE_ID,
       useValue: 'pt'
-    },
-    CursosService
+    }
   ],
   bootstrap: [AppComponent]
 })
